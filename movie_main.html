@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>My Top 10 Indian Movies</h1>
+        <div class="movie-list">
+            <!-- Movie 1: Bahubali 2 -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="bahubhali2.png" alt="Bahubhali 2 Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="bahubhali2.html">1. Bahubali 2</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="chhichore.png" alt="Chhichhore Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="chhichhore.html">2. Chhichhore</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="bajarangi bhaijan.png" alt="Chhichhore Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="bajarangi bhaijan.html">3. Bajarangi Bhaijan</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="sultan.png" alt="sultan Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="sultan.html">4. Sultan</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="vikram.png" alt="vikram Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="vikram.html">5. Vikram</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="3idiots.png" alt="3idiots Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="3idiots.html">6. 3idiots</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="kgf2.png" alt="kgf2 Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="kgf2.html">7. KGF2</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="jersey.png" alt="Chhichhore Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="jersey.html">8. Jersey</a></h2>
+                </div>
+            </div>
+
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="andhadhun.png" alt="andhadhun Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="andhadhun.html">9. Andhadhun:</a></h2>
+                </div>
+            </div>
+
+            <!-- Movie 2: Chhichhore -->
+            <div class="movie-item">
+                <div class="movie-poster">
+                    <img src="sitaramam.png" alt="sita ramam Poster">
+                </div>
+                <div class="movie-info">
+                    <h2><a href="sitaramam.html">10. Sita Ramam:</a></h2>
+                </div>
+            </div>
+
+           
+
+            <!-- Repeat for the other 8 movies (you can add in similar blocks as above) -->
+        </div>
+    </div>
+
+    <script>
+        // Smooth transition to movie pages
+        document.querySelectorAll('.movie-info a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); // Adjust the time for smoothness
+            });
+        });
+    </script>
+</body>
+</html>
